@@ -1,0 +1,55 @@
+// footer style
+footer {
+  background-color: #172E4D;
+  color: $default-color;
+  padding: 60px 0;
+
+  .container {
+    h2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 140%;
+      padding-bottom: 20px;
+    }
+
+    .subtitle2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 160%;
+      max-width: 500px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+
+    form {
+      .input {
+        background: #fff;
+        border-radius: 4px;
+        height: 48px;
+        max-width: 340px;
+        margin-right: 20px;
+        padding: 0 20px;
+
+        &::placeholder {
+          font-size: 18px;
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+          color: #BFBFBF;
+        }
+      }
+
+      button {
+        color: $button-color;
+        background: $button-background-color;
+        border-radius: $button-border-radius;
+        padding: 10px 25px;
+        cursor: pointer;
+        height: 48px;
+        width: 218px;
+      }
+    }
+  }
+}

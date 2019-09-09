@@ -1,0 +1,151 @@
+// header style
+header {
+  background: linear-gradient(0deg, #294366, #294366), linear-gradient(115.39deg, #3F2BB1 1.64%, #C86CD7 100%);
+  color: $default-color;
+
+  .banner {
+    padding: 50px 0 40px;
+
+    .container {
+      h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 120%;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 155%;
+        margin-top: 25px;
+      }
+
+      figure {
+        img {
+          max-width: 80%;
+          display: flex;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .steps {
+    position: relative;
+    background: #1B2F4D;
+    padding: 40px 0 20px;
+    overflow: hidden;
+
+    .list {
+      ol {
+        counter-reset: list;
+
+        li {
+          list-style-type: none;
+          display: flex;
+          max-width: 70%;
+          padding-bottom: 20px;
+
+          &:before {
+            counter-increment: list;
+            content: counter(list) " ";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 100%;
+            padding-right: 20px;
+            color: #000000;
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+
+    .form {
+      input {
+        background: #FFFFFF;
+        border-radius: 4px;
+        height: 48px;
+        padding: 0 20px;
+
+        &::placeholder {
+          font-family: 'OpenSans', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 30px;
+          display: flex;
+          align-items: center;
+          color: #000000;
+          opacity: 0.3;
+        }
+      }
+
+      button {
+        color: $button-color;
+        background: $button-background-color;
+        border-radius: $button-border-radius;
+        padding: 10px 25px;
+        cursor: pointer;
+
+      }
+    }
+  }
+}
+
+
+.arrow {
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+
+.arrow span {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: -60px;
+  top: 0px;
+  margin: -10px;
+  animation: animate 2s infinite;
+  display: inline-block;
+  background: linear-gradient(0deg, #2D5080, #2D5080), linear-gradient(270deg, #808080 8.88%, #666666 96.46%), linear-gradient(0deg, #9FD92B, #9FD92B), #FF974D;
+  background-blend-mode: normal, overlay, normal, normal;
+  transform: rotate(-45deg);
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+  background: linear-gradient(0deg, #2D5080, #2D5080), linear-gradient(270deg, #808080 8.88%, #333333 100%), linear-gradient(0deg, #9FD92B, #9FD92B), #FF974D;
+  background-blend-mode: normal, overlay, normal, normal;
+  opacity: 0.4;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+  position: absolute;
+  left: -35px;
+  top: 0px;
+  background: linear-gradient(0deg, #2D5080, #2D5080), linear-gradient(270deg, #808080 8.48%, #333333 95.49%), linear-gradient(0deg, #9FD92B, #9FD92B), #FF974D;
+  background-blend-mode: normal, overlay, normal, normal;
+  opacity: 0.3;
+}
+
+//@keyframes animate {
+//  0%{
+//    opacity: 0;
+//    transform: rotate(-45deg) translate(-20px,-20px);
+//  }
+//  50%{
+//    opacity: 1;
+//  }
+//  100%{
+//    opacity: 0;
+//    transform: rotate(-45deg) translate(20px,20px);
+//  }
+//}

@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "site_name": "dsa",
+      "email": "asdasd@asdfasdsf.com",
+      "createdAt": 1568024074076,
+      "id": 1
+    },
+    {
+      "site_name": "sad",
+      "email": "asdasd@asdfasdsf.com",
+      "createdAt": 1568024410941,
+      "id": 2
+    },
+    {
+      "site_name": "ads",
+      "email": "asdasd@asdfasdsf.com",
+      "createdAt": 1568024463908,
+      "id": 3
+    },
+    {
+      "site_name": "formheader",
+      "email": "qwe@asd.com",
+      "createdAt": 1568029694405,
+      "id": 4
+    },
+    {
+      "site_name_footer": "form Footer",
+      "email_footer_form": "asdasdasdas@asdas.com",
+      "createdAt": 1568029718662,
+      "id": 5
+    }
+  ]
+}

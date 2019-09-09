@@ -37,3 +37,38 @@ npm run build
 * `src/components` - folder with custom `.vue` components
 * `src/store` - app store for vue
 * `static/` - folder with extra static assets that will be copied into output folder
+
+# Mock Server
+
+Used to mock server API calls, based on json-server.
+
+## Requirements
+
+* Node.js latest is recommended.
+
+## Base structure
+
+* `server.js` - json-server config file;
+* `db.json` - database file.
+
+## Instalation
+
+`npm install`
+
+## Usage
+
+* `npm run start` - run mock server on http://localhost:3000
+
+Also, you can see subtasks in `package.json`.
+
+## Routes
+
+Based on the `db.json` file, here are all the default routes:
+
+```
+/users
+```
+
+To access and modify resources, you can use any HTTP method:
+ 
+`GET` `POST` `PUT` `PATCH` `DELETE` `OPTIONS`
